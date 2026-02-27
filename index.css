@@ -11,33 +11,24 @@ body {
   color: var(--color-text-primary);
 }
 
-/* Style Grid */
-
-.site-main {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto 1fr auto;
-}
-
 /* Style Header */
 
 .header-main {
-  box-shadow: var(--shadow-lg);
   position: sticky;
   top: 0;
   z-index: 1000;
   background: var(--color-bg-dark);
+  box-shadow: var(--shadow-lg);
 }
 
 .header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 66px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .headder-left,
@@ -73,28 +64,79 @@ body {
   font-weight: var(--font-weight-bold);
 }
 
+.header-right-login {
+  padding: 8px 30px;
+  background: var(--color-bg-card);
+}
+
+.header-right-login a {
+  color: var(--color-text-active);
+}
+
+.headder-right-cart a,
+.headder-right-svg-more a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xxs);
+}
 /* Style Main */
 
 .main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 20% 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 /* top-main Style */
 
 .top-main {
-  /* border: 1px solid #000; */
+  background: var(--color-bg-secondary);
+  box-shadow: var(--shadow-lg);
+  padding: 20px 20px;
+}
+
+.top-main-categories {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.categories-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.categories-item img {
+  height: 64px;
+  width: 64px;
+}
+
+.categories-item span img {
+  height: 12px;
+  width: 12px;
+}
+
+.categories-item:hover {
+  color: var(--color-text-active);
 }
 
 /* bottom-main Style */
 
 .bottom-main {
-  /* border: 1px solid #000; */
 }
 
 /* Style Footer */
 
 .footer {
-  /* border: 1px solid #000; */
 }
