@@ -3,7 +3,8 @@
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    gap: 10px;
+    gap: var(--space-sm);
+    padding: 10px 15px;
   }
 
   .headder-left {
@@ -17,6 +18,49 @@
   .headder-right {
     justify-content: space-between;
     width: 100%;
+    gap: var(--space-sm);
+  }
+
+  /* Style Deals OF The Day */
+
+  .deals-of-the-day {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .deals-of-the-day-right a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .deals-of-the-day-left-card-container,
+  .book-and-music-left-card-container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  /* Style Deals OF The Day */
+
+  .deals-of-the-day-right a img {
+    width: auto;
+    height: auto;
+  }
+
+  .deals-of-the-day-left-card-container,
+  .book-and-music-left-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .card {
+    flex: 1 1 45%;
   }
 }
