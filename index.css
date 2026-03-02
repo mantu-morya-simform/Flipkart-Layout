@@ -134,9 +134,196 @@ body {
 /* bottom-main Style */
 
 .bottom-main {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 20px;
 }
 
-/* Style Footer */
+.deals-of-the-day,
+.book-and-music {
+  box-shadow: var(--shadow-lg);
+  background: var(--color-bg-secondary);
+  margin: 20px 0px;
+}
 
-.footer {
+/* deals-of-the-day Style */
+
+.deals-of-the-day {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.deals-of-the-day-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-of-the-day-left-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.deals-of-the-day-left-header-left img {
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.deals-of-the-day-left-header-left p {
+  padding-top: 2px;
+  color: var(--color-text-muted);
+}
+
+.deals-of-the-day-left-header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.deals-of-the-day-left-header-right button {
+  padding: 15px 30px;
+  background: var(--color-primary);
+  color: var(--color-bg-card);
+  border: none;
+  cursor: pointer;
+}
+
+.deals-of-the-day-left-card-container {
+  display: flex;
+  width: 1200px;
+  overflow-x: auto;
+  gap: var(--space-md);
+  padding: 20px 20px;
+}
+
+.deals-of-the-day-left-card-container a {
+  text-decoration: none;
+}
+
+.card {
+  min-width: 200px;
+  min-height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.card img {
+  width: 120px;
+  height: 140px;
+}
+
+.card p:nth-child(2) {
+  font-weight: var(--font-weight-bold);
+}
+
+.card p:nth-child(3) {
+  color: var(--color-text-success);
+}
+
+.card p:nth-child(4) {
+  color: var(--color-text-muted);
+}
+
+.deals-of-the-day-right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* book-and-music Style */
+
+.book-and-music {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.book-and-music-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-and-music-left-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.book-and-music-left-header-left p {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-md);
+}
+
+.book-and-music-left-header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: var(--space-xs);
+}
+
+.book-and-music-left-header-right button {
+  padding: 15px 30px;
+  background: var(--color-primary);
+  color: var(--color-bg-card);
+  border: none;
+  cursor: pointer;
+}
+
+.book-and-music-left-card-container {
+  display: flex;
+  width: 1460px;
+  overflow-x: auto;
+  gap: var(--space-md);
+  padding: 20px 20px;
+}
+
+.book-and-music-left-card-container a {
+  text-decoration: none;
+}
+
+.card {
+  min-width: 200px;
+  min-height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.card img {
+  width: 120px;
+  height: 140px;
+}
+
+.card p:nth-child(2) {
+  font-weight: var(--font-weight-bold);
+}
+
+.card p:nth-child(3) {
+  color: var(--color-text-success);
+}
+
+.card p:nth-child(4) {
+  color: var(--color-text-muted);
+}
+
+.deals-of-the-day-right img {
+  width: 100%;
+  height: 100%;
 }
