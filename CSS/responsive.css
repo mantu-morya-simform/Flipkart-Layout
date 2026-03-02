@@ -1,0 +1,22 @@
+@import url("./variables.css");
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .headder-left {
+    justify-content: space-between;
+  }
+
+  .headder-left input {
+    width: 100%;
+  }
+
+  .headder-right {
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+}
