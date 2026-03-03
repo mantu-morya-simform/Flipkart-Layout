@@ -94,13 +94,13 @@ body {
   background: var(--color-bg-secondary);
   box-shadow: var(--shadow-lg);
   padding: 20px 20px;
+  overflow: auto;
 }
 
 .top-main-categories {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,10 +108,13 @@ body {
 }
 
 .categories-item {
+  min-height: 55px;
+  min-width: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: var(--space-sm);
   text-decoration: none;
   color: var(--color-text-primary);
@@ -159,6 +162,7 @@ body {
 .deals-of-the-day-left,
 .book-and-music-left {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -184,7 +188,8 @@ body {
   color: var(--color-text-muted);
 }
 
-.deals-of-the-day-left-header-left {
+.deals-of-the-day-left-header-left,
+.book-and-music-left-header-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +197,7 @@ body {
 }
 
 .deals-of-the-day-left-header-right button,
-.ook-and-music-left-header-right button {
+.book-and-music-left-header-right button {
   padding: 15px 30px;
   background: var(--color-primary);
   color: var(--color-bg-card);
@@ -203,7 +208,7 @@ body {
 .deals-of-the-day-left-card-container,
 .book-and-music-left-card-container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   overflow-x: auto;
   gap: var(--space-md);
   padding: 20px 20px;
@@ -250,14 +255,11 @@ body {
 
 /* book-and-music Style */
 
-.book-and-music-left-header-left {
+.book-and-music-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: var(--space-xs);
 }
 
 .book-and-music-left-card-container {
-  width: 1460px;
+  max-width: 1460px;
 }
